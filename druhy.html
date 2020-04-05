@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html public strict>
+<html lang="cs" xml:lang="cs" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>druhý: tab</title>
+	<style>
+		tr td:nth-child(1n+2) { /* (1n+2) - každý první počínaje druhým (repEvry, startPos) */
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<a name="top"></a>
+	<h2>Druhý: tabulka</h2>
+
+	<table border="0" width="50%" align="center" cellspacing="5" cellpadding="5">
+		<colgroup>
+			<col style="background-color:red" />
+			<col style="background-color:cornflowerblue" />
+			<col style="background-color:yellow" />
+		</colgroup>
+		<tr bgcolor="silver">
+			<td>txt a1</td>
+			<td>txt a2</td>
+			<td>txt a3</td>
+		</tr>
+		<tr bgcolor="gold">
+			<td>txt b1</td>
+			<td>txt b2</td>
+			<td>txt b3</td>
+		</tr>
+		<tr>
+			<td style="background-color:lime">txt c1</td>
+			<td colspan="2" style="background-color:azure">txt c1</td>
+			<!--<td>txt c2</td>
+			<td>txt c3</td>-->
+		</tr>
+		<tr bgcolor="#ddf">
+			<td>txt b1</td>
+			<td>txt b2</td>
+			<td>txt b3</td>
+		</tr>
+		<tr>
+			<td>txt b1</td>
+			<td>txt b2</td>
+			<td>txt b3</td>
+		</tr>
+		<tr>
+			<td>txt b1</td>
+			<td>txt b2</td>
+			<td>txt b3</td>
+		</tr>
+		<tr>
+			<td>txt b1</td>
+			<td>txt b2</td>
+			<td>txt b3</td>
+		</tr>
+		<tr>
+			<td>txt b1</td>
+			<td>txt b2</td>
+			<td>txt b3</td>
+		</tr>
+	</table>
+
+	<!--table>tr*3>td*3>{txt $}-->
+	table>tr*3>td*3>{txt $}
+
+	<br />	<hr />
+	<p align="right"><a href="#top">top</a> | <a href="index.html">INDEX.html</a></p><br />
+</body>
+</html>

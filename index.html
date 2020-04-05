@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs" xml:lang="cs">
+
+<head>
+	<meta charset="utf-8" />
+	<title>INDEX</title>
+	<link rel="stylesheet" href="styly.css" />
+</head>
+
+<body>
+
+	<a name="top"></a>
+	<code>protokol://server/adresar/soubor.(html)</code> <br />
+	<code>http://edu.vsb.cz/v17/www/zaklady/text1.html</code><br />
+	<code>file:///D:/Dropbox/it_pgm/19 RK VSB OOP/www/html/rk/prvni.html#top</code>	<br />
+	Skok na <a href="http://edu.vsb.cz/v17/www/zaklady/text1.html" target="_blank"> page VŠB</a>, otevírá se novém okně (<code>target="_blank"</code>).	<br />
+	Odkaz na anchor <a href="#par2"> druhý odstavec <code>&lt;p id&gt;</code> </a> nebo <a href="#parCenter">3. odstavec <code>&lt;a name&gt;</code></a>.<br />
+	<span style="color:darkorange"> Odkaz </span> na složku obrázků: <a href="http://edu.vsb.cz/v17/www/zaklady/Layout/images/">images/</a><br />
+	<span style="color:forestgreen"> Odkaz </span> na jeden z obrázků: <a href="http://edu.vsb.cz/v17/www/zaklady/Layout/images/lofot1.jpg">lofot1.jpg</a><br />
+
+	<br />	<hr />
+
+	<p style="text-align:right"><a href="#top">Zpět na úvod</a></p><br />
+
+	<!-- zenCoding (Emmet: https://docs.emmet.io/cheat-sheet/)
+	a										<a href=""></a>
+	!xyz								<xyz></xyz>
+	a:link							<a href="http://"></a>
+	br									<br />
+	link								<link href="#" rel="stylesheet" />
+	link:css						<link rel="stylesheet" href="" media="all" />
+	meta:utf						<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	style								<style></style>
+	script							<script></script>
+	script:src					<script src=""></script>
+	img									<img src="" alt="" />
+	form								<form></form>
+	form:get						<form action="" method="get"></form>
+	form:post						<form action="" method="post"></form>
+	input								<input type="" value="" />
+	input:date +...			<input type="date" value="" id="" />
+	select							<select></select>
+	select+							<select><option value=""></option></select>
+	option							<option></option>
+	html:xml						<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	html:xt							celá hlavička XHTML 1.0 / EN / UTF-8 / Transitional
+	html:xs							celá hlavička XHTML 1.0 / EN / UTF-8 / Strict
+	html:xxs						celá hlavička XHTML 1.1 / EN / UTF-8
+	html:4s							celá hlavička HTML 4.01 / EN / UTF-8 / Strict
+	ol+									<ol> <li></li> </ol>
+	ul+									<ul> <li></li> </ul>
+	dl+									<dl> <dt></dt> <dd></dd> </dl>
+	tr+									<tr> <td></td> </tr>
+	tr+									<tr> <td></td> </tr>
+	-->
+	<cool></cool>
+
+	Usemap: 4 kvadranty (rect), středový kruh (poloměr/radius 50, průměr 100)
+
+	<div align="left">
+		<map name="square">
+			<area shape="circle" coords="250,125,50" href="#" title="střed" alt="center" />
+			<area shape="rect" coords="0,0,250,125" href="prvni.html" title="první" alt="1" />
+			<area shape="rect" coords="250,0,500,125" href="druhy.html" title="druhý" alt="2" />
+			<area shape="rect" coords="0,125,250,250" href="treti.html" title="třetí" alt="3" />
+			<area shape="rect" coords="250,125,500,250" href="ctvrty.html" title="čtvrtý" alt="4" />
+		</map>
+
+		<img src="img/500x250.png" alt="" usemap="#square" />
+	</div>
+</body>
+</html>

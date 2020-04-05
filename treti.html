@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="cs" xml:lang="cs" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>třetí: form</title>
+	<style>
+		tr td:nth-child(2n+1) {
+			text-align: right;
+			background-color: wheat;
+		}
+
+		tr td:nth-child(1n+2) {
+			text-align: left;
+			background-color: pink;
+		}
+	</style>
+</head>
+
+<body>
+	<a name="top"></a>
+	<h2>Třetí: formuláře</h2>
+
+	<form name="formular1">
+		Jméno: <input type="text" /><br />
+		Příjmení: <input type="text" /><br />
+		Heslo: <input type="password" /><br />
+		Stiskni tlačítko: <input type="button" value="odešli!" /><br />
+	</form>
+	<br />
+
+	<form name="formular2">
+		<table>
+			<tr>
+				<td>Jméno</td>
+				<td><input type="text" value="Tony" size="30" maxlength="20" /></td>
+			</tr>
+			<tr>
+				<td>Příjmení</td>
+				<td><input type="text" value="Montana" size="30" maxlength="20" /></td>
+			</tr>
+			<tr>
+				<td>Heslo</td>
+				<td><input type="password" value="abc" size="10" maxlength="10" /></td>
+			</tr>
+			<tr>
+				<td>Odeslat</td>
+				<td><input type="button" value="odešli" /></td>
+			</tr>
+			<tr>
+				<td>Reset</td>
+				<td><input type="reset" value="smaž" /><small><em> smaže pouze do výchozího stavu</em></small></td>
+			</tr>
+		</table>
+	</form>
+
+	<br />
+
+	<form name="formular3a">
+		<textarea name="komentar" cols="50" rows="5">Zadej komentář.
+		</textarea>
+		<td><input type="reset" value="smaž" /></td>
+	</form>
+
+	<form name="formular3b">
+		<select name="jmeno_auta" size="1">
+			<!--jeden řádek ie. rozbalovací seznam-->
+			<option value="skoda">Škoda Fabia</option>
+			<option selected value="ford">Ford Focus</option>
+			<option value="mercedes">Citroen Picassa</option>
+			<option value="citroen">VW Beetle</option>
+		</select>
+	</form>
+	<br />
+
+	<form name="form4">
+		Máš rád slunce?<br />
+		<input checked type="checkbox" name="q1" />ANO<br />
+		<input type="checkbox" name="q2" />NE<br /><br />
+		Máš rád léto?<br />
+		<input type="radio" name="r1" />ANO<br />
+		<input type="radio" name="r1" />NE<br />		<!--musí být stejného NAME, aby se přepínalo; jinak se dají oba vybrat, ale už nejdou odebrat-->
+	</form>
+
+	<br />	<hr />
+	<p align="right"><a href="#top">top</a> | <a href="index.html">INDEX.html</a></p><br />
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿body {
+	font-size: medium;
+	line-height: normal;
+}
+
+p, b {
+	color: grey;
+	text-align: justify; /* 2. CSS interní */
+	font-family: Arial, Verdana;
+	font-style: normal;
+	font-size: 110%; /* % změní <p>, zároveň však znovu i <b>; <b> je pak větší než <p>, které je větší než <body>; <b> je tedy 2× větší než původní <body> */
+	text-indent: 1.5em; /* ×krát větší než default */
+	line-height: 1.5;
+}
+
+code {
+	/*background-color: lightgrey;*/
+	line-height: 2;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	background: #ddd;
+	padding: 2px;
+	color: white;
+	text-decoration: none;
+	/*font-size: 1.3;*/
+}
+
+.odstavec1 { /*	třída */
+	color: lightseagreen;
+	text-align: center;
+	font-style: italic;
+	line-height: 1;
+}
+
+.text2 { /*	třída */
+	color: darksalmon;
+	/*font: small-caps bold 25px Arial;*/
+	/*font-size: 150%;*/
+	font: bold 20px Times;
+	font-variant-caps: all-small-caps;
+	/*font-family: Arial, Verdana;*/
+}
+
+#oddil1 {
+	text-align: right;
+	color: darkmagenta;
+}
+
+/*a code {
+	background: red;
+	font-weight: bold;
+	text-decoration: none;
+}*/
+
+a:link code { /* right order = LVHA: 1-2 Link+Visited, 3 Hover, 4 Active */
+	background: green;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*a:visited code {
+	background: red;
+	font-weight: bold;
+	text-decoration: none;
+}*/
+
+a:hover code {
+	background: blue;
+	color: white;
+	text-decoration: wavy;
+	border: 1px solid #fff;
+}
+
+a:active code {
+	background: yellow;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*	zenCoding (Emmet: https://docs.emmet.io/cheat-sheet/)
+
++																																			skládá za tag
+>																																			child: skládá dovnitř tagu
+#id(entifikátor)									#header															<div id="header"></div>													přidá automaticky DIV
+.třída 														.title															<div class="title"></div>												přidá automaticky DIV
+																	ul>li.item$*3												<ul> <li class="item$"></li>										.li není nutné
+																	form#search.wide										<form id="search" class="wide"></form>
+																	p.class1.class2.class3							<p class="class1 class2 class3"></p>
+(sjednocení)											div>(header>ul>li*2>a)+footer>p			<div> <header> <ul> <li$><a href=""></a></li> </ul> </header> <footer> <p></p> </footer> </div>
+{txt}															p>{Click }+a{here}+{ to continue}		<p>Click <a href="">here</a> to continue</p>
+[$$]$ inkrement [prefixová 0]			ul>li.item$$*5											<ul> <li class="item01"></li> </ul>							.li není nutné
+																	ul>li.item$x$*5											<ul> <li class="item$x$"></li> </ul>						.li není nutné
+lorem (počet slov)								ul>li*5>lorem3											<ul> <li$>Sit amet, consectetur.</li>						.li není nutné
+																	p*4>lorem100												<p$> lorem100 slov
+																	ul>li*3>a{stránka $}								<ul> <li$><a href="">stránka $</a></li>					.li není nutné
+[název par]												h$[title=item$]*3										<h$ title="item$"></h$>
+																	td[rowspan=2 colspan=3 title]				<td rowspan="2" colspan="3" title=""></td>
+																	#[a=value1 b=value2]								<div a="value1" b="value2"></div>
+
+IMPLICITNÍ TAGY										em>.class														text = SPAN: class je ve SPANu				<em> <span class="class"></span> </em>
+																	ul>.class														list = LI: class je vnořený LI			<ul> <li class="class"></li> </ul>
+																	table>.row>.col											table = TR,TD class je TR, pak TD			<table> <tr class="row"> <td class="col"></td> </tr> </table>
+
+placeholder												place-200x100
+pic																pix-200x200-animals
+
+*/
