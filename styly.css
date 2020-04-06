@@ -4,7 +4,7 @@
 }
 
 p, b {
-	color: grey;
+	color: #808080;
 	text-align: justify; /* 2. CSS interní */
 	font-family: Arial, Verdana;
 	font-style: normal;
@@ -52,17 +52,18 @@ code {
 	text-decoration: none;
 }*/
 
-a:link code { /* right order = LVHA: 1-2 Link+Visited, 3 Hover, 4 Active */
+/* right order = LVHA: 1-2 Link+Visited, 3 Hover, 4 Active */
+a:link code { 
 	background: green;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-/*a:visited code {
+a:visited code {
 	background: red;
 	font-weight: bold;
 	text-decoration: none;
-}*/
+}
 
 a:hover code {
 	background: blue;

@@ -8,42 +8,101 @@
 	<link rel="stylesheet" href="styly.css" />
 	<!--1. CSS externí-->
 	<style>
+		table {
+			background-color: rgb(191, 213, 241);
+			/* border: 2px dotted blueviolet; */
+			padding: 5px;
+			/* border-spacing: 10px; */
+			/* margin: 10px; */
+			margin: 0 auto;
+			/* x0, yAuto ie na střed */
+		}
+
+		td {
+			background-color: rgb(235, 247, 230);
+			border: 1px solid red;
+		}
+
+		th {
+			background-color: rgb(211, 252, 115);
+			border: 1px dashed rgb(255, 24, 159);
+		}
+
 		ul {
-			/*list-style: url(img/dot_blue16.ico);*/
-			list-style-type: none;
-			background-color: bisque;
+			/* list-style-type: lower-aplha; */
+			list-style-type: decimal;
+			/* list-style: url(img/dot_blue16a.ico); */
+			/* list-style-type: none; */
+			/* background-color: bisque; */
+		}
+
+		ul ul {
+			list-style-type: lower-alpha;
+		}
+
+		ul ul ul {
+			list-style-type: circle;
+		}
+
+		ul#td_skoly {
+			list-style: url(img/dot_black16a.ico);
+			/* list-style-type: none; */
+			/* background-color: bisque; */
 		}
 
 		ol {
 			list-style: url(img/dot_orange16.ico);
-			background-color: powderblue;
-			color: cyan;
-			color: darkcyan;
+			list-style-type: none;
+			/* background-color: rgb(232, 252, 255); */
+		}
+
+		a:visited {
+			color: red;
+			text-decoration: none;
+		}
+
+		a {
+			color: black;
+		}
+
+		a:link {
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: blueviolet;
+			text-decoration: underline;
+		}
+
+		a:active {
+			text-decoration: underline;
 		}
 
 		li {
 			/* nedělat odrážky pomocí list-style: url(), ale pomocí background-image: url() */
-			background-image: url(img/dot_green16.ico);
+			/* background-image: url(img/dot_green16.ico);
 			background-repeat: no-repeat;
-			background-position: 0px 0px;
+			background-position: -4px 2px; */
 			/* posun odrážky XY */
-			padding-left: 16px;
+			/* padding-left: -16px; */
 			/* posun text od odrážky */
-			/*padding-bottom: 16px;*/
+			/* padding-bottom: 16px; */
 			/*list-style: url(img/dot_green16.ico);*/
-			background-color: pink;
+			/* background-color: rgb(255, 237, 240); */
 		}
 
-		selektor1,
-		selektor2 {
-			text-align: justify
-				/* oba najednou, společné vlastnosti */
+		#new #hlavicka {
+			width: 500px;
+			height: 50px;
+			background: silver;
+			text-align: center;
+			font-size: 2em;
+			color: white;
 		}
 
-		selektor3 selektor4 {
-			text-align: justify
-				/* oba pouze, když sel4 bude uvnitř sel3 */
-		}
+		#menu {}
+
+		#obsah {}
 	</style>
 </head>
 
@@ -54,20 +113,31 @@
 	<code>selector</code> <code>vlastnost</code> <code>hodnota</code>
 	<br />
 
-	<div>
-		<table cellspacing="0">
+	<div id="table">
+		<table>
+			<th colspan="2">TH table header</th>
 			<tr>
 				<td>
-					<h1>Ovoce: &lt;ol&gt;</h1>
+					<!-- <h5>Školy</h5> -->
+
 					<ul>
-						<li>BANány</li>
-						<li>jablka</li>
-						<li>MELouny</li>
-						<li>kiwi</li>
+						<li>Základky</li>
+						<li>Středky</li>
+						<ul>
+							<li>S maturitou</li>
+							<ul>
+								<li>Gymply</li>
+								<li>SOU</li>
+								<li>Lycea</li>
+							</ul>
+							<li>Bez maturity</li>
+						</ul>
 					</ul>
+
+
 				</td>
 				<td>
-					<h1>Ovoce: &lt;ol&gt;</h1>
+					<h5>Ovoce: &lt;ol&gt;</h5>
 					<ol>
 						<li>BANány</li>
 						<li>jablka</li>
@@ -76,52 +146,86 @@
 					</ol>
 				</td>
 			</tr>
+			<tr>
+				<td colspan="2">
+					<ul id="td_skoly">
+						<li><a href="http://www.vsb.cz">VŠB-TUO Ostrava</a></li>
+						<li><a href="b">UP Olomouc</a></li>
+						<li><a href="c">OU Ostrava</a></li>
+					</ul>
+				</td>
+
+			</tr>
 		</table>
 	</div>
 
-	<p>Lákamí vůněhulás úmyval rohlivý jednovod lek Měsí doska hudbalo vůněžný povodlobi. Škovat Láka štínům úmyslunce čný
-		zásou dosticí úmysl umraje vá Bolivní. Hrátce postě dobou úmyva A záprosti anadlo obolekno čin ří pokemi. Tara
-		lválně Nedno jenžto jenžto zlem hole úmyvaledn přiroštím dopis přirohlín. Ky jít lek moc stako vestupoči podtrojdi
-		tlínům obzor rozcuce smutomáš. Umraje předopist bicí jít dobou Tajakkoli nasíční hliv Vlasy parcipádn magnednem.
-		Spoubený nasy úmyvat ztepický spoubený alesmělý stě vlad říky Umírně stako. Lek jít ško zen <span
-			style="color: blue"><strong>radložný zenžto</strong></span>. A úmyvalem řící oba Marásná. Parapa rojdi taráský
-		bájen čuvadi onová v hafanechř nasíční jednovod štím. Tlínům an vůněhulás pologie ček zenžto dostrhnov lžičkouza ta
-		smeti Umírně. <div id="identifikator">Sestí věný obzor alehradi hafan alesmělý přirohlín zako Lemí máler halekamat.
-			<span class="text2">Rohlivý ří mocipáda čuvadi vla leda</span> ří ční Bájen kajední vlač.</div> Hole al umělý
-		starásný věď umělý Ky vůně Tor záprajak <code>škoda</code>. Jenžto umí znovu já Al boliv Bájen burdíčkov obolekno
-		sobit školivé. Zlek.</p>
-	<p class="odstavec1">Lžičkaký nim umrad čuvat krádní obzor rohlínům bolo lžičkodpo lák je. Přirohlín oba roštínkam
-		hliv rozem hulákaj trilogie dostrhnov úmyva záprajak úmyvalem. Zlem nim umí Matkolek parcipádn lva boliv lžičkod
-		přestí krát nalem. <div id="oddil1">Znovodlož úmyvaleka znoumít holek hudíčkou věď umrad podlo bájen je pytlačkou.
-			Lesmělý spoubený Dobožek úmyslunce Al kojsko záprajak rojskočár Ra umí Dráto. <span class="trida">Bájedosto zásou
-				bolo Matkolek</span> řící obývá hliv umělý Lžičkamí bit ně. Umí hlínka obzor srdí hudbalo z sólo <b>dechyňsko
-				máš K Básněžný. Čný kuce ačít škočajine tak úmysl hudba radložný autobzor ztepický dostrojsk. Kuce božnám ka oba
-				Věný lunce vestupoči dopicí ačít ští hraparcip. Čuvalemi bájen škočiledo jednovod řící vůněhulás obal mutníky
-				povačkoje klehrátce. Partavěď Dobzor mený božkat nim říky přehliv Jít dostrojsk ně lekajakko. Dostrhnov úmysl
-				řící umrad štím holek čuvalemi ječní záříkemi ka Hráčepicí.</b></div> Smělý.</p>
-	<b>Dostrhnov úmysl řící umrad štím holek čuvalemi ječní záříkemi ka Hráčepicí.</b>
-	Spouzavěď ško je lválně ří rostrojsk umyva dobzor mutor smírní rozzářící. Nim poskoubej lva magne řík jakovoda umrak
-	<a href="a"><code>Matkolek</code></a> škojdi štím oba. Umrak čný smítkem čin ří umělý úmyvat jít rojdi Tor málobrazy.
-	V oba hulákak božný božný dráček Obsely ně nám věný Básněžný. Z nuchváled ta autobzor Umraburdí říky umělý Depicí
-	halekamat umyvat ští. Dopicí božný školý umrajedpo vůněžný oba umraprošt ční kraburdí obse lák. Lákaje marajin <span
-		class="text2">vla alesmělý slušiv proje alesmělý pokemi poci dopicí</span> umyvačkod. Obzor úmyvalem mocipádec A
-	Holehlíně spoubený umraburdí jakovoda leda vlad magne. Z nuchváled tak smírní autný rozcuckyt říky Mat Mat hudba
-	nasíční. Z záprosti nim ku jenžto Obsely zápresivý vlalehliv dostrojsk hodlo umítkočin. Rojednova sudí sudba Dobožek
-	mezilogie ří přestí sůl úmyval Umírně hal. Sestí poc umrad autobzor sólo Přesiv přiroštím lva máler řícipádní
-	tobselad. Umrad drávačkol Polivní lžičkaký umrak kolobicí ští projedpok Básněžný a úmyval. Tlínkat bájedpodl zle jít
-	nuchváled marajin přirohlín větrhnova úmyvaledn zásobý ka. Vůně říkemi Ra marajin neřese z řící Oba obal umí ční.
-	Bájen an hrátce bubejis znou smeti škověný vůněhulás sólou úmysl nucký. Ční říky úmyvat.
-	<p>Smírní smítkem úmyva časí hafan dostrhnov napně mělý štím z Alehlínka. Muto rojený ští Jít ač ští zenžto umí uměsí
-		kler paráčepra. Ří vlad Přesiv kolobicí neda úmysl alem úmyvatkov vůněhulás alehlínům hou. <span class="text2">Lunce
-			vlalehliv schvám poskoubej vá nač předa smírní odobzor</span> rozcuce řícipádaj. Obzor předopist vlačít tavětraje
-		Umyslupos umělý málobrazy neřese hulák K lákaje. Znou říkem Bolivní bájen nuchváled smuslušle jakovoda Jený
-		Obrajinec já z. Lákaje tara čin kamatko přiroštím ští ří smeti kamítkoli ačít smítkem. Lžičkočaj Záprazy Busluncen
-		roštínkam dobrajin <code>dráčeprap</code> kráčepres umělý umělý slupodpod uměsí. Přední lák sudí rojskolý jít onověď
-		dráček dobus Věný parcipádn umrapříke. Ka taráský hal lva čuvadi srdí vlačít zle pa božnám lunce. Láka dobývá Ky
-		zako nim obal hulákak Buben záprosti tobselad úmyvat. Čuvat magne ačkový zenžto klad lunce zlemí klesivý kráčepres
-		doska bubejis. Obsely z poc holek hrátce muto kamítkoli doska anadlo zle Lák. Odobzor Bit úmyslunce autobzor říkem
-		dostě záříkemi hudíčkou bývá umí dopicí. Jít oba ačít bájen Tajakkoli vá ačít ka sólo drávadlov školivé. Raj
-		dostrhnov dopis Ra úmyvat lvat Mat.</p>
+	<div id="new">
+		<div id="hlavicka">
+			<p>Hlavička FIRMY</p>
+		</div>
+		<div id="menu">
+			<p></p>
+		</div>
+		<div id="obsah">
+			<p></p>
+		</div>
+	</div>
+
+	<div id="txt">
+		<p>Lákamí vůněhulás úmyval rohlivý jednovod lek Měsí doska hudbalo vůněžný povodlobi. Škovat Láka štínům úmyslunce
+			čný
+			zásou dosticí úmysl umraje vá Bolivní. Hrátce postě dobou úmyva A záprosti anadlo obolekno čin ří pokemi. Tara
+			lválně Nedno jenžto jenžto zlem hole úmyvaledn přiroštím dopis přirohlín. Ky jít lek moc stako vestupoči podtrojdi
+			tlínům obzor rozcuce smutomáš. Umraje předopist bicí jít dobou Tajakkoli nasíční hliv Vlasy parcipádn magnednem.
+			Spoubený nasy úmyvat ztepický spoubený alesmělý stě vlad říky Umírně stako. Lek jít ško zen <span
+				style="color: blue"><strong>radložný zenžto</strong></span>. A úmyvalem řící oba Marásná. Parapa rojdi taráský
+			bájen čuvadi onová v hafanechř nasíční jednovod štím. Tlínům an vůněhulás pologie ček zenžto dostrhnov lžičkouza
+			ta
+			smeti Umírně. <div id="identifikator">Sestí věný obzor alehradi hafan alesmělý přirohlín zako Lemí máler
+				halekamat.
+				<span class="text2">Rohlivý ří mocipáda čuvadi vla leda</span> ří ční Bájen kajední vlač.</div> Hole al umělý
+			starásný věď umělý Ky vůně Tor záprajak <code>škoda</code>. Jenžto umí znovu já Al boliv Bájen burdíčkov obolekno
+			sobit školivé. Zlek.</p>
+		<p class="odstavec1">Lžičkaký nim umrad čuvat krádní obzor rohlínům bolo lžičkodpo lák je. Přirohlín oba roštínkam
+			hliv rozem hulákaj trilogie dostrhnov úmyva záprajak úmyvalem. Zlem nim umí Matkolek parcipádn lva boliv lžičkod
+			přestí krát nalem. <div id="oddil1">Znovodlož úmyvaleka znoumít holek hudíčkou věď umrad podlo bájen je pytlačkou.
+				Lesmělý spoubený Dobožek úmyslunce Al kojsko záprajak rojskočár Ra umí Dráto. <span class="trida">Bájedosto
+					zásou
+					bolo Matkolek</span> řící obývá hliv umělý Lžičkamí bit ně. Umí hlínka obzor srdí hudbalo z sólo <b>dechyňsko
+					máš K Básněžný. Čný kuce ačít škočajine tak úmysl hudba radložný autobzor ztepický dostrojsk. Kuce božnám ka
+					oba
+					Věný lunce vestupoči dopicí ačít ští hraparcip. Čuvalemi bájen škočiledo jednovod řící vůněhulás obal mutníky
+					povačkoje klehrátce. Partavěď Dobzor mený božkat nim říky přehliv Jít dostrojsk ně lekajakko. Dostrhnov úmysl
+					řící umrad štím holek čuvalemi ječní záříkemi ka Hráčepicí.</b></div> Smělý.</p>
+		<b>Dostrhnov úmysl řící umrad štím holek čuvalemi ječní záříkemi ka Hráčepicí.</b>
+		Spouzavěď ško je lválně ří rostrojsk umyva dobzor mutor smírní rozzářící. Nim poskoubej lva magne řík jakovoda umrak
+		<a href="a"><code>Matkolek</code></a> škojdi štím oba. Umrak čný smítkem čin ří umělý úmyvat jít rojdi Tor
+		málobrazy.
+		V oba hulákak božný božný dráček Obsely ně nám věný Básněžný. Z nuchváled ta autobzor Umraburdí říky umělý Depicí
+		halekamat umyvat ští. Dopicí božný školý umrajedpo vůněžný oba umraprošt ční kraburdí obse lák. Lákaje marajin <span
+			class="text2">vla alesmělý slušiv proje alesmělý pokemi poci dopicí</span> umyvačkod. Obzor úmyvalem mocipádec A
+		Holehlíně spoubený umraburdí jakovoda leda vlad magne. Z nuchváled tak smírní autný rozcuckyt říky Mat Mat hudba
+		nasíční. Z záprosti nim ku jenžto Obsely zápresivý vlalehliv dostrojsk hodlo umítkočin. Rojednova sudí sudba Dobožek
+		mezilogie ří přestí sůl úmyval Umírně hal. Sestí poc umrad autobzor sólo Přesiv přiroštím lva máler řícipádní
+		tobselad. Umrad drávačkol Polivní lžičkaký umrak kolobicí ští projedpok Básněžný a úmyval. Tlínkat bájedpodl zle jít
+		nuchváled marajin přirohlín větrhnova úmyvaledn zásobý ka. Vůně říkemi Ra marajin neřese z řící Oba obal umí ční.
+		Bájen an hrátce bubejis znou smeti škověný vůněhulás sólou úmysl nucký. Ční říky úmyvat.
+		<p>Smírní smítkem úmyva časí hafan dostrhnov napně mělý štím z Alehlínka. Muto rojený ští Jít ač ští zenžto umí
+			uměsí
+			kler paráčepra. Ří vlad Přesiv kolobicí neda úmysl alem úmyvatkov vůněhulás alehlínům hou. <span
+				class="text2">Lunce
+				vlalehliv schvám poskoubej vá nač předa smírní odobzor</span> rozcuce řícipádaj. Obzor předopist vlačít
+			tavětraje
+			Umyslupos umělý málobrazy neřese hulák K lákaje. Znou říkem Bolivní bájen nuchváled smuslušle jakovoda Jený
+			Obrajinec já z. Lákaje tara čin kamatko přiroštím ští ří smeti kamítkoli ačít smítkem. Lžičkočaj Záprazy Busluncen
+			roštínkam dobrajin <code>dráčeprap</code> kráčepres umělý umělý slupodpod uměsí. Přední lák sudí rojskolý jít
+			onověď
+			dráček dobus Věný parcipádn umrapříke. Ka taráský hal lva čuvadi srdí vlačít zle pa božnám lunce. Láka dobývá Ky
+			zako nim obal hulákak Buben záprosti tobselad úmyvat. Čuvat magne ačkový zenžto klad lunce zlemí klesivý kráčepres
+			doska bubejis. Obsely z poc holek hrátce muto kamítkoli doska anadlo zle Lák. Odobzor Bit úmyslunce autobzor říkem
+			dostě záříkemi hudíčkou bývá umí dopicí. Jít oba ačít bájen Tajakkoli vá ačít ka sólo drávadlov školivé. Raj
+			dostrhnov dopis Ra úmyvat lvat Mat.</p>
+	</div>
 
 	<br />
 	<hr />
