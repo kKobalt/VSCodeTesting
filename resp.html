@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-size: 30px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .left {
+      background-color: #2196F3;
+      padding: 20px;
+      float: left;
+      width: 20%;
+      /* The width is 20%, by default */
+    }
+
+    .main {
+      background-color: #f1f1f1;
+      padding: 20px;
+      float: left;
+      width: 60%;
+      /* The width is 60%, by default */
+    }
+
+    .right {
+      background-color: #4CAF50;
+      padding: 20px;
+      float: left;
+      width: 20%;
+      /* The width is 20%, by default */
+    }
+
+    kbd {
+      border: 1px solid #000;
+      border-radius: 5px;
+      padding: 0px 5px;
+    }
+
+
+    samp {
+      border: 1px solid #000;
+      border-radius: 5px;
+      padding: 0px 5px;
+    }
+
+    /* Use a media query to add a break point at 800px: */
+    @media screen and (max-width:800px) {
+
+      .left,
+      .main,
+      .right {
+        width: 100%;
+      }
+
+      /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  </style>
+</head>
+
+<body>
+  <div>@media screen and (max-width:800px) {<br>
+    .left, .main, .right { width: 100%; }</div>
+
+  <div class="left">
+    <p>methode <kbd>.left</kbd> hicks<br>width: 20%;</p>
+  </div>
+
+  <div class="main">
+    <p>methode <samp>Error .main</samp> hicks<br>width: 60%;</p>
+  </div>
+
+  <div class="right">
+    <p>.right<br>width: 20%;</p>
+  </div>
+
+</body>
+
+</html>

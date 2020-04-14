@@ -8,44 +8,48 @@
 </head>
 
 <style>
-  .nav-home {
-    /* display: block; */
-    position: fixed;
-    background-color: #ccc;
-    color: white;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    /* padding: 10px; */
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
-
-
-  }
-
-  /* .button {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    background-color: black;
-    color: white;
-
-  } */
-
   body {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
+    background-color: #f4f4f4;
+    color: #555555;
+    font: normal 16px Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+    /* border: 3px solid salmon; */
   }
 
-  #stranka {
+  a {
+    text-decoration: none;
+  }
+
+  .button {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .nav-home-btn {
+    top: 100px;
+    position: fixed;
+    z-index: 100;
+    background-color: red;
+  }
+
+  .button:hover {
+    background: lightcoral;
+    color: white;
+  }
+
+  .container {
     position: relative;
     width: 70%;
     margin: 0 auto;
+    border: 2px dashed greenyellow;
   }
 
   p {
     text-align: justify;
+    padding: 0px;
   }
 
   img {
@@ -56,6 +60,10 @@
     border: 1px solid rgb(209, 209, 209);
     padding: 5px;
     /* clear: both; */
+    float: left;
+    position: relative;
+    /* display: block; */
+    margin: 0px;
   }
 
   img:hover {
@@ -63,48 +71,49 @@
     opacity: 50%;
   }
 
-  .img1 {
+  #img1st {
+    /* display: inline; */
+    position: relative;
+    top: 0px;
+    right: 0px;
+    float: right;
+    margin: 0 0 0px 20px;
+
+    /* padding: 20px; */
+  }
+
+  #imgRight {
+    /* display: none; */
     float: right;
     border-color: red;
     margin: 5px 0px 0px 10px;
   }
 
-  .img2 {
+  #imgLeft {
     float: left;
     border-color: blue;
     margin: 5px 10px 0px 0px;
     padding: 5px;
   }
-
-  #img {
-    /* border: 3px solid blue;	 */
-    /* border-color: greenyellow; */
-    float: left;
-    position: relative;
-    display: block;
-    /* top: 100px;*/
-    left: -50px;
-    margin: 0px;
-  }
 </style>
 
 <body>
   <!-- <a name="top"></a> -->
-  <div class="nav-home">
-    <a href="index.html">HOME</a>
-  </div>
-  <div id="stranka">
-    <h2>První</h2>
+  <a class="nav-home-btn button" href="index.html">HOME</a>
 
-    <div><img id="img" src="http://placehold.it/200x100?text=%23img" /></div>
+  <div class="container">
+
+    <div id="img1st"><img src="http://placehold.it/200x100?text=%23img1" /></div>
+    <h2>První!</h2>
     <p>Lákamí vůněhulás úmyval rohlivý jednovod lek Měsí doska hudbalo vůněžný povodlobi. Škovat Láka štínům úmyslunce
-      záprosti anadlo obolekno čin ří pokemi. Taralválně <img class="img1"
-        src="http://placehold.it/100?text=img1" />Nedno jenžto jenžto zlem hole úmyvaledn přiroštím dopis přirohlín.
-      Kyjít lek moc stako vestupoči podtrojdi tlínům obzor rozcuce smutomáš. Umraje předopist bicí jít dobou Tajakkoli
+      záprosti anadlo obolekno čin ří pokemi. Taralválně Nednojenžto jenžto zlem hole úmyvaledn přiroštím dopis
+      přirohlín. Kyjít lek moc stako vestupoči podtrojdi tlínům obzor rozcuce smutomáš. Umraje předopist bicí jít dobou
+      Tajakkoli
       nasíční hliv Vlasy parcipádn magnednem. Spoubený nasy úmyvat ztepický spoubený alesmělý stě vlad říky Umírně
       stako. Lek jít ško zen. Umraje předopist bicí jít dobou Tajakkoli nasíční hliv Vlasy parcipádn magnednem. Spoubený
       nasy úmyvat ztepický spoubený alesmělý stě vlad říky Umírně stako. Lek jít ško zen. <span
-        style="color:red"><strong>radložný zenžto</strong></span>. A úmyvalem řící oba Marásná. Parapa rojdi taráský
+        style="color:red"><strong>radložný zenžto</strong></span>. A úmyvalem řící oba Marásná. <img id="imgRight"
+        src="http://placehold.it/100?text=imgR" />Parapa rojdi taráský
       bájen čuvadi onová v hafanechř nasíční jednovod štím. Tlínům an vůněhulás pologie
       ček zenžto dostrhnov lžičkouza ta smeti Umírně. Sestí věný obzor alehradi hafan alesmělý přirohlín zako Lemí máler
       halekamat. Rohlivý ří mocipáda čuvadi vla leda ří ční Bájen kajední vlač. Hole al umělý starásný věď umělý Ky vůně
@@ -117,12 +126,13 @@
       autobzor ztepický dostrojsk. Kuce božnám ka oba Věný lunce vestupoči dopicí ačít ští hraparcip. Čuvalemi bájen
       škočiledo jednovod řící vůněhulás obal mutníky povačkoje klehrátce. Partavěď Dobzor mený božkat nim říky přehliv
       Jít dostrojsk ně lekajakko. Dostrhnov úmysl řící umrad štím holek čuvalemi ječní záříkemi ka Hráčepicí. Smělý.</p>
+    <a class="button" href="">button</a>
     <p>Spouzavěď ško je lválně ří rostrojsk umyva dobzor mutor smírní rozzářící. Nim poskoubej lva magne
       řík jakovoda umrak Matkolek škojdi štím oba. Umrak čný smítkem čin ří umělý úmyvat jít rojdi Tor málobrazy. V oba
       hulákak božný božný dráček Obsely ně nám věný Básněžný. Z nuchváled ta autobzor Umraburdí říky umělý Depicí
       halekamat umyvat ští. Dopicí božný školý umrajedpo vůněžný oba umraprošt ční kraburdí obse lák. Lákaje marajin vla
       alesmělý slušiv proje alesmělý pokemi poci dopicí umyvačkod. Obzor úmyvalem mocipádec A Holehlíně spoubený
-      umraburdí jakovoda leda vlad magne. <img class="img2" src="http://placehold.it/200x100?text=%23img2" /> Z
+      umraburdí jakovoda leda vlad magne. <img id="imgLeft" src="http://placehold.it/200x100?text=%23imgL" /> Z
       nuchváled tak smírníautný rozcuckyt říky Mat Mat hudba nasíční. Z záprosti nim ku jenžto Obsely zápresivý
       vlalehliv dostrojsk hodlo umítkočin. Rojednova sudí sudba Dobožek mezilogie ří přestí sůl úmyval Umírně hal. Sestí
       poc umrad
@@ -140,11 +150,10 @@
       kráčepres doska bubejis. Obsely z poc holek hrátce muto kamítkoli doska anadlo zle Lák. Odobzor Bit úmyslunce
       autobzor říkem dostě záříkemi hudíčkou bývá umí dopicí. Jít oba ačít bájen Tajakkoli vá ačít ka sólo drávadlov
       školivé. Raj dostrhnov dopis Ra úmyvat lvat Mat.</p>
-
-    <br />
-    <hr />
-    <p style="text-align: right"><a href="#top">top</a> | <a href="index.html">INDEX.html</a></p><br />
   </div>
+
+  <br />
+
 </body>
 
 </html>
