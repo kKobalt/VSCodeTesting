@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js1.js"></script>
+  <title>JS1</title>
+  <style>
+    table {
+      border: 1px dotted grey;
+      border-spacing: 0px;
+      /* background: red; */
+      /* border-collapse: separate; */
+    }
+
+    th,
+    td {
+      /* border: 1px solid red; */
+      /* background: #eee; */
+      padding: 0 5px;
+      min-width: 20px;
+      text-align: center;
+    }
+
+    .delBg {
+      /* color: blue; */
+      background: #f002;
+      /* font-weight: bold; */
+    }
+
+    .sudaRed {
+      color: red;
+      /* background: #f002; */
+    }
+
+    .znakBold {
+      font-weight: bold;
+      /* text-decoration: underline; */
+    }
+
+    .noHighlight {
+      color: #bbb;
+      /* background: #f7f7f7; */
+      font-weight: normal;
+    }
+
+    div {
+      background: salmon;
+      /* min-width: 10px; */
+    }
+
+    #tab {
+      background: lightskyblue;
+    }
+
+    span {
+      background: salmon;
+      padding: 5px;
+    }
+  </style>
+  <script>
+    // function napis() {
+    //   // document.write("aa");
+    //   form2.tpole2.value = "text přes funkci, onLoad()";
+    // }
+    // function secti() {
+    //   soucet.suma.value = parseInt(soucet.prvni.value) + parseInt(soucet.druhe.value);
+    // }
+  </script>
+</head>
+
+<!-- <body onload="napis();"> -->
+
+<body>
+
+  <script>
+    // func_if();
+    // func_cykly();
+    // tabulka();
+    // tabulka2();
+
+    // var polomer = window.prompt("Zadej poloměr: ");
+    // obsah(polomer);
+    // document.write(obsah(polomer));
+    // obsahFull();
+
+    // obarvi("red", "kokoko");
+  </script>
+  <!-- <p>Otevře index v Novém okně <span onmouseover="skok_seznam()">(mouseover)</span></p> -->
+
+  <hr>
+  <p>form onclick(), RND, buttn</p>
+  <form name="soucet" onclick="napis()">
+    <input type="text" name="tpole2">
+    <label for="tpole2"> &lt; klikni do mě (vygenerovaný text + náhodná čísla)</label><br>
+    <input type="text" name="prvni">
+    <label for="prvni"> &lt; zadej 1.</label><br>
+    <input type="text" name="druhe">
+    <label for="druhe"> &lt; zadej 2.</label>
+    <!-- <button name="sum" onclick="secti();">sečti</button><br> -->
+    <input type="button" value="Spocitej" name="sum" onclick="secti();"></input><br>
+    <input type="text" name="suma">
+    <label for="suma"> vysledek </label><br>
+  </form>
+
+  <hr>
+  <p>operace s čísly</p>
+  <form name="frmOperace">
+    <input type="button" value="náhodná čísla" name="rnd" onclick="randoms()"><br>
+    <input type="text" name="prvni">
+    <label for="prvni"> &lt; zadej 1.</label><br>
+    <input type="text" name="druhe">
+    <label for="druhe"> &lt; zadej 2.</label><br>
+    <input type="text" name="suma">
+    <label for="suma"> &lt; výsledek</label><br>
+    <input type="button" value="+" name="plus" onclick="opPlus()">
+    <input type="button" value="-" name="minus" onclick="opMinus()">
+    <input type="button" value="*" name="krat" onclick="opKrat()">
+    <input type="button" value="/" name="deleno" onclick="opDeleno()">
+  </form>
+
+</body>
+
+</html>
